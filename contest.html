@@ -5,12 +5,42 @@
     <meta charset="utf-8">
 
     <style>
+        body{
+            margin:0;
+        }
         a {
+            color:black;
             text-decoration: none;
         }
         h1 {
           font-size:45px; 
           text-align: center;
+          border-bottom: 2px solid gray;
+          margin:0;
+          padding:20px;
+        }
+        h2{
+            border-bottom: 2px solid gray;
+            margin: 0;
+            padding:20px;
+            text-align: center;
+        }
+        ol{
+            border-right:2px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+            padding-left: 40px;  
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+            padding:left 33px;
+        }
+        #comment{
+            padding-left:25px;
         }
     </style>
 </head>
@@ -19,34 +49,37 @@
     <h1><a href="index.html">팀플링</a></h1>
 
     <h2><a href="contest.html" style="color:red; text-decoration:underline">공모전</a></h2>
+    <div id="grid">
+        <ol>
+        <li><a herf="1.html">html</a></li>
+        <li><a herf="2.html">css</a></li>
+        <li><a herf="3.html">javascript</a></li>
+        </ol>
 
-    <ol>
-     <li><a herf="1.html">html</a></li>
-     <li><a herf="2.html">css</a></li>
-     <li><a herf="3.html">javascript</a></li>
-    </ol>
-
-    <p>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://web1-qjztgkxelt.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
+        <div id="comment">
+            <p>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://web1-qjztgkxelt.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+        </div>
+    </div>
    
 
   
